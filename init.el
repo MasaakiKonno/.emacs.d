@@ -28,3 +28,6 @@
 
 ;; Hide menu bar
 (menu-bar-mode -1)
+
+;; Alias of 'Yes' to 'y', 'No' to 'p'
+(defalias 'yes-or-no-p 'y-or-n-p)
