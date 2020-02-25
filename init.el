@@ -9,14 +9,13 @@
 
 ;; Require auto-save-buffers package
 (require 'auto-save-buffers)
-(run-with-idle-timer 1.0 t 'auto-save-buffers) 
+(run-with-idle-timer 1.0 t 'auto-save-buffers)
 
 ;; Truncate long lines
 (set-default 'truncate-lines t)
 
 ;;; Load path and load theme 'cyberpunk'
-(add-to-list 'custom-theme-load-path' "~/.emacs.d/cyberpunk-theme.el")
-(load-theme 'cyberpunk t)
+(load-theme 'tango-dark t)
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
@@ -26,3 +25,6 @@
 
 ;; Use UTF-8
 (prefer-coding-system 'utf-8)
+
+;; Hide menu bar
+(menu-bar-mode -1)
